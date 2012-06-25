@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Iframe Sandbox Demos</title>
+
+	<script>
+window.onload=function(){
+	var btn=document.getElementById('btnCheck');
+	btn.onclick=function(){
+		alert('Script enabled!');
+	};
+}
+</script>
+</head>
+<body>
+<div id="divMain">
+	<h3>Child 2</h3>
+        <div id="divIframeContainer">
+		
+	<form id="frmSandbox">
+	<input type="text" id="txtName"/>
+	<input type="button" id="btnCheck" value="Check"/>
+	<input type="submit" id="btnSubmit" value="Submit"/>
+	</form>
+	<div>Interestingly, Child 2 will have all flags set!!</div>
+	</div>
+</div>
+</body>
+</html>

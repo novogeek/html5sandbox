@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Iframe Sandbox Demos</title>
+<style> 
+body {
+    background-color: #F3F2FC;
+    
+}
+
+iframe {width: 400px; height: 270px;border: solid 1px #595FBD;}</style>
+</head>
+<body>
+<div id="divMain">
+	<h3>Parent page</h3>
+        <div id="divIframeContainer">
+		<div>Sandboxed Iframe (with "Allow-scripts") pointing to Child 1 </div>
+		<iframe sandbox="allow-scripts" src="childSandbox1.html"/>
+	</div>
+</div>
+</body>
+</html>
